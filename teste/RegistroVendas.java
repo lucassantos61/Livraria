@@ -9,7 +9,7 @@ public class RegistroVendas {
 		Autor autor = new Autor();
 		autor.setNome("Lucas Ferrira");
 
-		LivroImpresso livroFisisco = new LivroImpresso(autor);
+		LivroImpresso livroFisisco = new LivroImpresso(null);
 		livroFisisco.SetNome("Desbravando o C");
 		livroFisisco.setValor(59.9);
 
@@ -22,8 +22,7 @@ public class RegistroVendas {
 		carrinho carroCompras = new carrinho();
 		carroCompras.adiciona(livroFisisco);
 		carroCompras.adiciona(ebook);
-		System.out.println("Livro fisico:"+livroFisisco.getValor());
-		System.out.println("Ebook :"+ebook.getValor());
+		carroCompras.mostraCarrinho();
 		System.out.println("Total das compras : " + carroCompras.getTotal());
 	}
 
