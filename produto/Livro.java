@@ -53,7 +53,7 @@ public abstract class Livro implements Produto {
 		System.out.println("Nome do Livro :" + getNome());
 		System.out.println("Descrição do Livro :" + getDesc());
 		System.out.println("Valor :" + getValor());
-		System.out.println("ISBN :" + getValor());
+		System.out.println("ISBN :" + getISBN());
 	}
 
 	public Livro(Autor autor) {
@@ -63,5 +63,14 @@ public abstract class Livro implements Produto {
 		this.autor = autor;
 		this.isbn = "000-000-000-00";
 	}
+	
+	@Override
+	public String toString(){
+		return "Nome :"+nome+
+				"Descrição :"+Descricao+
+				"Valor :"+Valor+
+				"ISBN :"+isbn;
+	}
+	
 
 }

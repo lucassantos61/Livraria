@@ -20,9 +20,8 @@ public class carrinho {
 	}
 	public void mostraCarrinho(){
 		Produto produtos[] = getProdutos();
-		for (int i = 0 ; i < produtos.length;i++){
+		for (Produto produto : produtos){
 			try{
-				Produto produto = produtos[i];
 				if (produto != null){
 					System.out.println(produto.getValor());
 				}
