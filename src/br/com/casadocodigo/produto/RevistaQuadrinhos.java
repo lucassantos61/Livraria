@@ -3,7 +3,7 @@ import br.com.casadocodigo.livraria.Editora;
 public class RevistaQuadrinhos extends Revista{
 	private String formato;
 	private String ano;
-	private String Edição;
+	private String Edicao;
 	public String getFormato() {
 		return formato;
 	}
@@ -16,11 +16,11 @@ public class RevistaQuadrinhos extends Revista{
 	public void setAno(String ano) {
 		this.ano = ano;
 	}
-	public String getEdição() {
-		return Edição;
+	public String getEdicao() {
+		return Edicao;
 	}
-	public void setEdição(String edição) {
-		Edição = edição;
+	public void setEdicao(String edicao) {
+		Edicao = edicao;
 	}
 	public RevistaQuadrinhos(Editora editora){
 		super(editora);
